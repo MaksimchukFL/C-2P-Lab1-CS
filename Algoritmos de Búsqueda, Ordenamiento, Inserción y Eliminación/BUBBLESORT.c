@@ -1,12 +1,12 @@
 #include <stdio.h> 
-// Function to swap elements 
+// Función que intercambia elementos
 void swap(int *a, int *b) 
 { 
 	int temp = *a; 
 	*a = *b; 
 	*b = temp; 
 }  
-// bubble sort function
+// Función ordenamiento burbuja.
 void bubbleSort(int array[], int n) 
 { 
 	int i, j; 
@@ -14,7 +14,7 @@ void bubbleSort(int array[], int n)
 		for (j = 0; j < n-i-1; j++) if (array[j] > array[j+1]) 
 			swap(&array[j], &array[j+1]); 
 }   
-// Function to print the elements of an array
+// Función que imprime los elementos de un arreglo
 void printArray(int array[], int size) 
 { 
 	int i; 
@@ -22,7 +22,7 @@ void printArray(int array[], int size)
 		printf("%d ", array[i]); 
 	printf("n"); 
 }   
-// Main Function
+// Main 
 int main() 
 { 
 	int array[] = {89, 32, 20, 113, -15}; 
